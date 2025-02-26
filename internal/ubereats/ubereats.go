@@ -3,7 +3,7 @@ package ubereats
 import (
 	"log"
 
-	"com/github/fastfoodfinance/scraper/internal"
+	"github.com/fastfoodfinance/scraper/internal"
 )
 
 func Menus() []*internal.Menu {

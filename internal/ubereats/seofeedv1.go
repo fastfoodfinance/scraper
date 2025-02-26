@@ -1,12 +1,13 @@
 package ubereats
 
 import (
-	"com/github/fastfoodfinance/scraper/internal"
-	internalHttp "com/github/fastfoodfinance/scraper/internal/http"
 	"fmt"
 	"log"
 	"net/http"
 	"strings"
+
+	"github.com/fastfoodfinance/scraper/internal"
+	internalHttp "github.com/fastfoodfinance/scraper/internal/http"
 )
 
 type brand string

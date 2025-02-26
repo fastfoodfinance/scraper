@@ -1,10 +1,11 @@
 package main
 
 import (
-	"com/github/fastfoodfinance/scraper/internal"
-	"com/github/fastfoodfinance/scraper/internal/ubereats"
 	"encoding/json"
 	"log"
+
+	"github.com/fastfoodfinance/scraper/internal"
+	"github.com/fastfoodfinance/scraper/internal/ubereats"
 )
 
 func main() {
