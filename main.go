@@ -1,7 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"com/github/fastfoodfinance/scraper/internal"
+	"com/github/fastfoodfinance/scraper/internal/ubereats"
+	"encoding/json"
+	"log"
+)
 
 func main() {
-	fmt.Println("hello world")
+	menus := []*internal.Menu{}
+	menus = append(menus, ubereats.Menus()...)
+
+	json, err := json.Marshal(menus)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	str := string(json)
+	log.Println(str)
 }
