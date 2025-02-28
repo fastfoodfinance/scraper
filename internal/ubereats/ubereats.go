@@ -6,6 +6,8 @@ import (
 	"github.com/fastfoodfinance/scraper/internal"
 )
 
+const source internal.Source = "ubereats.com"
+
 func Menus() []*internal.Menu {
 	pathnames := []pathname{
 		{brand: burgerKing, city: unitedStatesNewYork},

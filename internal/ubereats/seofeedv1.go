@@ -95,6 +95,7 @@ func seoFeedV1ResponseToMenu(response *seoFeedV1Response) (*internal.Menu, error
 	}
 
 	menu := &internal.Menu{
+		Source:     source,
 		Restaurant: restaurant,
 		Items:      items,
 	}

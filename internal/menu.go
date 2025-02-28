@@ -1,6 +1,9 @@
 package internal
 
+type Source string
+
 type Menu struct {
+	Source     Source     `json:"source"`
 	Restaurant Restaurant `json:"restaurant"`
 	Items      []Item     `json:"items"`
 }
